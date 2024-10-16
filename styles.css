@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  text-align: right;
+  font-weight: bold;
+  font-family: "Poppins";
+  font-style: normal;
+}
+
+.crayon {
+  width: 280px;
+  height: 30px;
+  margin: 10px auto;
+  border-radius: 5px;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.crayon p {
+  line-height: 30px; 
+  color: black; 
+  font-weight: bold;
+}
+
+
+.Red {
+  background: linear-gradient(to right, hsla(0, 100%, 50%, 1), hsla(0, 100%, 75%, 1));
+  box-shadow: 0 0 20px hsla(0, 100%, 50%, 1);
+}
+
+.Green {
+  background: linear-gradient(to right, hsla(137, 92%, 46%, 1), hsla(137, 92%, 65%, 1));
+  box-shadow: 0 0 20px hsla(137, 92%, 46%, 1);
+}
+
+.Blue {
+  background: linear-gradient(to right, hsla(240, 100%, 50%, 1), hsla(240, 100%, 70%, 1));
+  box-shadow: 0 0 20px hsla(240, 100%, 50%, 1);
+}
+
+.Pink {
+  background: linear-gradient(to right, rgb(244, 46, 121), rgb(242, 60, 126));
+  box-shadow: 0 0 20px hsla(336, 71%, 95%, 1);
+}
+
+.Yellow {
+  background: linear-gradient(to right, hsla(68, 96%, 51%, 1), hsla(68, 96%, 75%, 1));
+  box-shadow: 0 0 20px hsla(68, 96%, 51%, 1);
+}
+
+.Cyan {
+  background: linear-gradient(to right, hsla(180, 100%, 50%, 1), hsla(180, 100%, 75%, 1));
+  box-shadow: 0 0 20px hsla(180, 100%, 50%, 1);
+}
+
+.Magenta {
+  background: linear-gradient(to right, hsla(313, 100%, 50%, 1), hsla(313, 100%, 75%, 1));
+  box-shadow: 0 0 20px hsla(313, 100%, 50%, 1);
+}
+
+.Lavender {
+  background: linear-gradient(to right, hsla(240, 60%, 80%, 1), hsla(240, 60%, 90%, 1));
+  box-shadow: 0 0 20px hsla(240, 60%, 80%, 1);
+}
+
+.Salmon {
+  background: linear-gradient(to right, hsla(15, 80%, 75%, 1), hsla(15, 80%, 90%, 1));
+  box-shadow: 0 0 20px hsla(15, 80%, 75%, 1);
+}
+
+.Turquoise {
+  background: linear-gradient(to right, hsla(174, 100%, 50%, 1), hsla(174, 100%, 75%, 1));
+  box-shadow: 0 0 20px hsla(174, 100%, 50%, 1);
+}
+
+.SlateBlue {
+  background: linear-gradient(to right, hsla(248, 53%, 58%, 1), hsla(248, 53%, 70%, 1));
+  box-shadow: 0 0 20px hsla(248, 53%, 58%, 1);
+}
+
+.Crimson {
+  background: linear-gradient(to right, hsla(348, 83%, 47%, 1), hsla(348, 83%, 60%, 1));
+  box-shadow: 0 0 20px hsla(348, 83%, 47%, 1);
+}
+
+.PeachPuff {
+  background: linear-gradient(to right, hsla(28, 100%, 86%, 1), hsla(28, 100%, 95%, 1));
+  box-shadow: 0 0 20px hsla(28, 100%, 86%, 1);
+}
+
+.ForestGreen {
+  background: linear-gradient(to right, hsla(120, 61%, 34%, 1), hsla(120, 61%, 45%, 1));
+  box-shadow: 0 0 20px hsla(120, 61%, 34%, 1);
+}
+
+.DeepPink {
+  background: linear-gradient(to right, hsla(330, 100%, 58%, 1), hsla(330, 100%, 75%, 1));
+  box-shadow: 0 0 20px hsla(330, 100%, 58%, 1);
+}
+
+.Moccasin {
+  background: linear-gradient(to right, hsla(38, 100%, 85%, 1), hsla(38, 100%, 90%, 1));
+  box-shadow: 0 0 20px hsla(38, 100%, 85%, 1);
+}
+
+
+
+.crayon::after {
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 117px;
+  background-color: hsl(0, 0%, 100%, 0.55);
+  box-shadow: 0 0 0.5px hsl(0, 0%, 100%, 0.55);
+  z-index: 10;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  right: 68px;
+  top: 0;
+}
+
+.crayon::before {
+  content: "";
+  position: absolute;
+  left: 62px;
+  height: 30px;
+  width: 4px;
+  border-left: 3px solid hsla(0, 0%, 13%, 1);
+  border-right: 3px solid hsla(0, 0%, 13%, 1);
+  z-index: 11;
+}
